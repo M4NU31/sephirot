@@ -3,17 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/musephx3r/public_html/templates/sephirot/
     - /bin/mkdir -p "$DEPLOYPATH"
-    - /bin/echo "=== DEPLOY START ===" > "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/date >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/echo "PWD:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/pwd >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/echo "LS repo root:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/ls -la >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/echo "GIT HEAD:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /usr/bin/git rev-parse HEAD >> "${DEPLOYPATH}_deploy_debug.txt" 2>&1 || /bin/echo "git rev-parse failed" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/echo "RSYNC PATH:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /usr/bin/which rsync >> "${DEPLOYPATH}_deploy_debug.txt" 2>&1 || /bin/echo "rsync not found" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/echo "RUN RSYNC:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - rsync -av --delete --exclude '.git' --exclude '.cpanel.yml' --exclude 'node_modules' ./ "$DEPLOYPATH" >> "${DEPLOYPATH}_deploy_debug.txt" 2>&1
-    - /bin/echo "LS destination:" >> "${DEPLOYPATH}_deploy_debug.txt"
-    - /bin/ls -la "$DEPLOYPATH" >> "${DEPLOYPATH}_deploy_debug.txt"
+    - /bin/rm -rf "${DEPLOYPATH:?}"*
+    - /bin/tar -cf - . --exclude='.git' --exclude='node_modules' --exclude='.cpanel.yml' | /bin/tar -xf - -C "$DEPLOYPATH"
