@@ -1,5 +1,7 @@
 <?php
 return [
-  'author' => 'Manuel',
-  'description' => 'Custom WebEngine Template - Sephirot'
+  'name'        => 'Sephirot',
+  'author'      => 'Manuel',
+  'version'     => '1.1.0',
+  'description' => 'Cyan/Black MU Online Landing + Module Wrapper (Season 8 Ep 3)'
 ];
