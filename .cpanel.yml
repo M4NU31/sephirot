@@ -1,5 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/musephx3r/public_html/templates/sephirot
-    - /usr/bin/rsync -a --delete --exclude '.git' --exclude 'node_modules' --exclude '.cpanel.yml' ./ $DEPLOYPATH
+    - export DEPLOYPATH=/home/musephx3r/public_html/templates/sephirot/
+    - /usr/bin/rsync -a --delete \
+      --exclude '.git' \
+      --exclude 'node_modules' \
+      --exclude '.cpanel.yml' \
+      ./ $DEPLOYPATH
