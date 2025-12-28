@@ -6,30 +6,36 @@
   <div class="wrap">
 
     <?php
-      /**
-       * HOME/LANDING
-       * Si WebEngine no está renderizando un módulo específico, mostramos la landing.
-       */
-      $is_home = true;
+      // Ruta actual (sin querystring)
+      $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+      $uri = rtrim($uri, '/');
 
-      // Algunos cores setean un módulo actual. Si existe y no es home, no mostramos landing.
-      if(isset($module) && $module && $module !== 'home') $is_home = false;
-      if(isset($_GET['module']) && $_GET['module'] && $_GET['module'] !== 'home') $is_home = false;
+      // Base URL por si tu sitio está en subcarpeta (normalmente __PATH_URL__ ya lo maneja)
+      $base = rtrim(parse_url(__PATH_URL__, PHP_URL_PATH) ?? '', '/');
+
+      // Normaliza: quita la base del URI si aplica
+      if($base && strpos($uri, $base) === 0) {
+        $uri = substr($uri, strlen($base));
+        $uri = $uri ?: '/';
+      }
+
+      // Consideramos home si es "/" o vacío
+      $is_home = ($uri === '' || $uri === '/');
 
       if($is_home){
         include(__PATH_TEMPLATE_ROOT__ . 'views/landing.php');
       } else {
-        // MODULE WRAPPER (Register/Login/Rankings/etc)
         echo '<section class="section"><div class="section-inner">';
-        // WebEngine suele exponer el HTML del módulo en alguna variable.
-        // Si tu base usa otro nombre, reemplaza SOLO estas líneas.
-        if(isset($module_content)){
+
+        // WebEngine: el contenido del módulo suele venir en alguna variable.
+        if(isset($module_content) && $module_content){
           echo $module_content;
-        } elseif(isset($content)){
+        } elseif(isset($content) && $content){
           echo $content;
         } else {
-          echo '<div class="card"><h3>Module</h3><p>No module content variable found. Ajusta <code>$module_content</code> o <code>$content</code> según tu core.</p></div>';
+          echo '<div class="card"><h3>Module</h3><p>No se encontró la variable de contenido del módulo. Busca en tu core qué variable imprime el módulo y colócala aquí.</p></div>';
         }
+
         echo '</div></section>';
       }
     ?>
