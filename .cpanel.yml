@@ -2,5 +2,11 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/musephx3r/public_html/templates/sephirot/
-    - /bin/mkdir -p $DEPLOYPATH
-    - /usr/bin/rsync -av --delete --exclude '.git' --exclude '.cpanel.yml' --exclude 'node_modules' ./ $DEPLOYPATH
+    - /bin/mkdir -p "$DEPLOYPATH"
+    - /bin/date > "${DEPLOYPATH}_deploy_log.txt"
+    - /bin/echo "Running deploy from: $(/bin/pwd)" >> "${DEPLOYPATH}_deploy_log.txt"
+    - /bin/echo "Listing repo root:" >> "${DEPLOYPATH}_deploy_log.txt"
+    - /bin/ls -la >> "${DEPLOYPATH}_deploy_log.txt"
+    - /bin/echo "Which rsync:" >> "${DEPLOYPATH}_deploy_log.txt"
+    - /usr/bin/which rsync >> "${DEPLOYPATH}_deploy_log.txt" || /bin/echo "rsync not found in PATH" >> "${DEPLOYPATH}_deploy_log.txt"
+    - rsync -av --delete --exclude '.git' --exclude '.cpanel.yml' --exclude 'node_modules' ./ "$DEPLOYPATH" >> "${DEPLOYPATH}_deploy_log.txt" 2>&1
