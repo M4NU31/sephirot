@@ -25,11 +25,11 @@
 
     <!-- Landing anchors (Home) -->
     <nav class="nav" aria-label="Navegación principal">
-      <a data-spy-link href="#home">Home</a>
-      <a data-spy-link href="#features">Features</a>
-      <a data-spy-link href="#about">About</a>
-      <a data-spy-link href="#gameplay">Gameplay</a>
-      <a data-spy-link href="#download">Download</a>
+      <a data-spy-link href="<?php echo __PATH_URL__ ?>#home">Home</a>
+      <a data-spy-link href="<?php echo __PATH_URL__ ?>#features">Features</a>
+      <a data-spy-link href="<?php echo __PATH_URL__ ?>#about">About</a>
+      <a data-spy-link href="<?php echo __PATH_URL__ ?>#gameplay">Gameplay</a>
+      <a data-spy-link href="<?php echo __PATH_URL__ ?>#download">Download</a>
     </nav>
 
     <div class="actions">

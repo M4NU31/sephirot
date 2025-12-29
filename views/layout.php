@@ -22,22 +22,21 @@
       // Consideramos home si es "/" o vacío
       $is_home = ($uri === '' || $uri === '/');
 
+      echo '<section class="section"><div class="section-inner">';
+
+      // 1) Si es home, tu landing
       if($is_home){
         include(__PATH_TEMPLATE_ROOT__ . 'views/landing.php');
       } else {
-        echo '<section class="section"><div class="section-inner">';
-
-        // WebEngine: el contenido del módulo suele venir en alguna variable.
-        if(isset($module_content) && $module_content){
-          echo $module_content;
-        } elseif(isset($content) && $content){
-          echo $content;
+        // 2) Si no es home, que WebEngine imprima el módulo real
+        if(function_exists('loadModule')){
+          loadModule();
         } else {
-          echo '<div class="card"><h3>Module</h3><p>No se encontró la variable de contenido del módulo. Busca en tu core qué variable imprime el módulo y colócala aquí.</p></div>';
+          echo '<div class="card"><h3>Module</h3><p>No encuentro la función que imprime módulos. Revisa default/index.php y dime qué función/include usa.</p></div>';
         }
-
-        echo '</div></section>';
       }
+
+      echo '</div></section>';
     ?>
 
   </div>
