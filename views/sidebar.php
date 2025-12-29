@@ -30,9 +30,9 @@
   <?php  if(isLoggedIn()) { ?>
   <div class="server-card">
     <?php
-      echo '<div class="server-row">'
+      echo '<div class="server-row">';
       echo '<div class="pill">'.lang('usercp_menu_title').'</div>';
-      echo '</div>'
+      echo '</div>';
       echo '<div class="panel-body">';
           templateBuildUsercp();
       echo '</div>';
