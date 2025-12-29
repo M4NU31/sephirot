@@ -1,5 +1,5 @@
 <?php
-    $serverStatus = ( CheckGS('190.102.43.191', 55900) == true ) ? 'Online' : 'Offline';
+$serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline';
 ?>
 <aside class="sidebar" aria-label="Barra lateral">
   <div class="server-card">
@@ -17,7 +17,7 @@
   </div>
 
   <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
-     href="<?php echo __BASE_URL__ ?>download">Play now</a>
+    href="<?php echo __BASE_URL__ ?>download">Play now</a>
 
   <div class="side-menu" role="navigation" aria-label="Secciones">
     <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
@@ -25,16 +25,16 @@
     <a data-spy-link href="<?php echo __BASE_URL__ ?>donation">Donation</a>
   </div>
 
-  <?php  if(isLoggedIn()) { ?>
-  <div class="server-card user-panel-card">
-    <?php
+  <?php if (isLoggedIn()) { ?>
+    <div class="server-card user-panel-card">
+      <?php
       echo '<div class="server-row">';
-      echo '<div class="pill">'.lang('usercp_menu_title').'</div>';
+      echo '<div class="pill">' . lang('usercp_menu_title') . '</div>';
       echo '</div>';
       echo '<div class="panel-body">';
-          templateBuildUsercp();
+      templateBuildUsercp();
       echo '</div>';
-    ?>
-  </div>
+      ?>
+    </div>
   <?php } ?>
 </aside>
