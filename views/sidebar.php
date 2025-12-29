@@ -4,11 +4,15 @@
 <aside class="sidebar" aria-label="Barra lateral">
   <div class="server-card">
     <div class="server-row">
-      <div class="pill"><?php echo config('server_name'); ?></div>
+      <div class="pill">Info</div>
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
+    <div class="status">Exp: <b>500x</b></div>
+    <div class="status">Master Exp: <b>250x</b></div>
+    <div class="status">Drop: <b>50%</b></div>
     <div class="status">Status: <b><?php echo $serverStatus; ?></b></div>
     <div class="status">Players: <b><?php echo $onlinePlayers; ?>/<?php echo $maxOnline; ?></b></div>
+    <a href="<?php echo __BASE_URL__ ?>info"><b>Mas Info</b></a>
 
   </div>
 
@@ -17,14 +21,8 @@
 
   <div class="side-menu" role="navigation" aria-label="Secciones">
     <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>#features">Features</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>#about">About</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>#gameplay">Gameplay</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>#download">Download</a>
-
-    <a href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
-    <a href="<?php echo __BASE_URL__ ?>register">Registration</a>
-    <a href="<?php echo __BASE_URL__ ?>download">Client Download</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>donation">Donation</a>
   </div>
 
   <?php  if(isLoggedIn()) { ?>

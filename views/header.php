@@ -34,7 +34,7 @@
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#features">Features</a>
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#about">About</a>
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#gameplay">Gameplay</a>
-      <a data-spy-link href="<?php echo __BASE_URL__ ?>#download">Download</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>downloads">Download</a>
     </nav>
 
     <div class="actions">
