@@ -1,7 +1,7 @@
 <?php if(!defined('access')) die(); ?>
 <section id="home" class="section hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <div class="section-inner hero-inner" data-flickity='{ "groupCells": true, "cellAlign": "left", "contain": true }'>
+  <div class="section-inner hero-inner" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true }'>
 	<div class="hero-slider-item hero-content">
 		<div class="hero-slider-item-inner">
 			this is slider item
