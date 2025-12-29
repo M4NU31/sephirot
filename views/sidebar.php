@@ -4,7 +4,7 @@
 <aside class="sidebar" aria-label="Barra lateral">
   <div class="server-card">
     <div class="server-row">
-      <div class="pill">Info</div>
+      <div class="pill">Server Info</div>
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
     <div class="status">Exp: <b>500x</b></div>

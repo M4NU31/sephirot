@@ -19,6 +19,14 @@
   --glowStrong: 0 0 0 1px rgba(48,240,255,.28), 0 0 44px rgba(48,240,255,.24);
 }
 
+a{
+  color: var(--cyan);
+  transition: color ease .25s;
+  &:hover{
+    color: var(--cyan2);
+  }
+}
+
 *{box-sizing:border-box}
 html,body{height:100%}
 html{scroll-behavior:smooth}
