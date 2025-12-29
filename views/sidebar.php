@@ -12,7 +12,7 @@ $serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline
     <div class="status">Drop: <b>50%</b></div>
     <div class="status">Status: <b><?php echo $serverStatus; ?></b></div>
     <div class="status">Players: <b><?php echo $onlinePlayers; ?>/<?php echo $maxOnline; ?></b></div>
-    <a href="<?php echo __BASE_URL__ ?>info"><b>Mas Info</b></a>
+    <a href="<?php echo __BASE_URL__ ?>info"><b>More Info</b></a>
 
   </div>
 

@@ -20,17 +20,10 @@
   <div class="topbar-inner">
     <button class="burger" data-burger aria-label="Abrir menú">☰</button>
 
-    <div class="brand">
-      <div class="brand-mark" aria-hidden="true"></div>
-      <div class="brand-title">
-        <b><?php echo config('server_name'); ?></b>
-        <small>Season 8 • Episode 3</small>
-      </div>
-    </div>
-
     <!-- Landing anchors (Home) -->
     <nav class="nav" aria-label="Navegación principal">
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#news">News</a>
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#features">Features</a>
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#about">About</a>
       <a data-spy-link href="<?php echo __BASE_URL__ ?>#gameplay">Gameplay</a>
