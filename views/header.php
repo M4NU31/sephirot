@@ -25,17 +25,17 @@
 
     <!-- Landing anchors (Home) -->
     <nav class="nav" aria-label="Navegación principal">
-      <a data-spy-link href="<?php echo __PATH_URL__ ?>#home">Home</a>
-      <a data-spy-link href="<?php echo __PATH_URL__ ?>#features">Features</a>
-      <a data-spy-link href="<?php echo __PATH_URL__ ?>#about">About</a>
-      <a data-spy-link href="<?php echo __PATH_URL__ ?>#gameplay">Gameplay</a>
-      <a data-spy-link href="<?php echo __PATH_URL__ ?>#download">Download</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#features">Features</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#about">About</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#gameplay">Gameplay</a>
+      <a data-spy-link href="<?php echo __BASE_URL__ ?>#download">Download</a>
     </nav>
 
     <div class="actions">
       <!-- WebEngine modules -->
-      <a class="btn ghost" href="<?php echo __PATH_URL__ ?>login">Account</a>
-      <a class="btn primary" href="<?php echo __PATH_URL__ ?>register">Register</a>
+      <a class="btn ghost" href="<?php echo __BASE_URL__ ?>login">Account</a>
+      <a class="btn primary" href="<?php echo __BASE_URL__ ?>register">Register</a>
     </div>
   </div>
 </header>

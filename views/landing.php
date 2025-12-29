@@ -12,7 +12,7 @@
       <div class="hero-actions">
         <a class="btn frame" href="#download">Play now</a>
         <a class="btn ghost" href="#features">View features</a>
-        <a class="btn ghost" href="<?php echo __PATH_URL__ ?>rankings">Rankings</a>
+        <a class="btn ghost" href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
       </div>
     </div>
 
@@ -63,8 +63,8 @@
           Si algo rompe la economía, se corrige. Si algo es divertido, se potencia.
         </p>
         <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn frame" href="<?php echo __PATH_URL__ ?>register">Register</a>
-          <a class="btn ghost" href="<?php echo __PATH_URL__ ?>rankings">Rankings</a>
+          <a class="btn frame" href="<?php echo __BASE_URL__ ?>register">Register</a>
+          <a class="btn ghost" href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
         </div>
       </div>
       <div class="media" aria-hidden="true"></div>
@@ -105,8 +105,8 @@
         <h3>Download client</h3>
         <p>Enlaza aquí tu mirror. Recomendado: 2 mirrors (principal + backup).</p>
         <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="<?php echo __PATH_URL__ ?>download">Download now</a>
-          <a class="btn ghost" href="<?php echo __PATH_URL__ ?>news">Patch notes</a>
+          <a class="btn primary" href="<?php echo __BASE_URL__ ?>download">Download now</a>
+          <a class="btn ghost" href="<?php echo __BASE_URL__ ?>news">Patch notes</a>
         </div>
       </div>
 
@@ -114,8 +114,8 @@
         <h3>Create account</h3>
         <p>Registro directo desde WebEngine.</p>
         <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="<?php echo __PATH_URL__ ?>register">Register</a>
-          <a class="btn ghost" href="<?php echo __PATH_URL__ ?>login">Account</a>
+          <a class="btn primary" href="<?php echo __BASE_URL__ ?>register">Register</a>
+          <a class="btn ghost" href="<?php echo __BASE_URL__ ?>login">Account</a>
         </div>
       </div>
     </div>

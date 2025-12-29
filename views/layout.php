@@ -10,8 +10,8 @@
       $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
       $uri = rtrim($uri, '/');
 
-      // Base URL por si tu sitio está en subcarpeta (normalmente __PATH_URL__ ya lo maneja)
-      $base = rtrim(parse_url(__PATH_URL__, PHP_URL_PATH) ?? '', '/');
+      // Base URL por si tu sitio está en subcarpeta (normalmente __BASE_URL__ ya lo maneja)
+      $base = rtrim(parse_url(__BASE_URL__, PHP_URL_PATH) ?? '', '/');
 
       // Normaliza: quita la base del URI si aplica
       if($base && strpos($uri, $base) === 0) {
