@@ -4,4 +4,4 @@ deployment:
     - export DEPLOYPATH=/home/musephx3r/public_html/templates/sephirot/
     - /bin/mkdir -p "$DEPLOYPATH"
     - /bin/rm -rf "${DEPLOYPATH:?}"*
-    - /bin/tar -cf - . --exclude='.git' --exclude='node_modules' --exclude='.cpanel.yml' | /bin/tar -xf - -C "$DEPLOYPATH"
+    - /bin/tar -cf - . --exclude='.git' --exclude='node_modules' --exclude='.cpanel.yml' --exclude='.node_modules' | /bin/tar -xf - -C "$DEPLOYPATH"

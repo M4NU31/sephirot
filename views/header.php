@@ -33,9 +33,17 @@
     </nav>
 
     <div class="actions">
-      <!-- WebEngine modules -->
-      <a class="btn ghost" href="<?php echo __BASE_URL__ ?>login">Account</a>
-      <a class="btn primary" href="<?php echo __BASE_URL__ ?>register">Register</a>
+      <?php if(isset($_SESSION['username']) && $_SESSION['username']): ?>
+        
+        <a class="btn ghost" href="<?php echo __BASE_URL__ ?>usercp">Account</a>
+        <a class="btn primary" href="<?php echo __BASE_URL__ ?>logout">Logout</a>
+
+      <?php else: ?>
+
+        <a class="btn ghost" href="<?php echo __BASE_URL__ ?>login">Login</a>
+        <a class="btn primary" href="<?php echo __BASE_URL__ ?>register">Register</a>
+
+      <?php endif; ?>
     </div>
   </div>
 </header>
