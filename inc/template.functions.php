@@ -148,3 +148,11 @@ function templateLanguageSelector() {
 		}
 	echo '</ul>';
 }
+
+function CheckGS($ip, $port) {
+	if(!@fsockopen($ip,$port,$err,$err_str,0.1)) {
+		return false;
+	} else {
+		return true;
+	}
+}

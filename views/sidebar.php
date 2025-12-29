@@ -1,23 +1,14 @@
+<?php
+    $serverStatus = ( CheckGS('190.102.43.191', 55900) == true ) ? 'Online' : 'Offline';
+?>
 <aside class="sidebar" aria-label="Barra lateral">
   <div class="server-card">
     <div class="server-row">
       <div class="pill"><?php echo config('server_name'); ?></div>
-      <div class="pill">Online</div>
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
-    <div class="status">Status: <b>Online</b></div>
-    <?php
-      $online = false;
-      $fp = @fsockopen(config('gameserver_address'), config('gameserver_port'), $errno, $errstr, 1);
-      if ($fp) {
-        $online = true;
-        fclose($fp);
-      }
-    ?>
-
-    <span class="status <?php echo $online ? 'online' : 'offline'; ?>">
-      <?php echo $online ? 'Online' : 'Offline'; ?>
-    </span>
+    <div class="status">Status: <b><?php echo $serverStatus; ?></b></div>
+    <div class="status">Players: <b><?php echo $onlinePlayers; ?>/100</b></div>
 
   </div>
 
