@@ -282,12 +282,7 @@ body{
 /* Hero */
 .hero{ padding:0; }
 .hero-inner{
-  position:relative;
-  min-height: 520px;
-  display:grid;
-  grid-template-columns: 1.25fr .75fr;
-  gap: 18px;
-  align-items:stretch;
+  display: block;
 }
 .hero-bg{
   position:absolute; inset:0;
