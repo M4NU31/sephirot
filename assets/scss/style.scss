@@ -350,6 +350,7 @@ body {
 }
 
 .wrap {
+  @include container;
   padding: 28px;
 }
 
@@ -602,7 +603,6 @@ body {
   }
 
   .wrap {
-    @include container;
     padding: 18px
   }
 
