@@ -6,6 +6,19 @@
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
     <div class="status">Status: <b>Online</b></div>
+    <?php
+      $online = false;
+      $fp = @fsockopen(config('gameserver_address'), config('gameserver_port'), $errno, $errstr, 1);
+      if ($fp) {
+        $online = true;
+        fclose($fp);
+      }
+    ?>
+
+    <span class="status <?php echo $online ? 'online' : 'offline'; ?>">
+      <?php echo $online ? 'Online' : 'Offline'; ?>
+    </span>
+
   </div>
 
   <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
