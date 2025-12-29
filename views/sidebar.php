@@ -26,7 +26,7 @@
   </div>
 
   <?php  if(isLoggedIn()) { ?>
-  <div class="server-card">
+  <div class="server-card user-panel-card">
     <?php
       echo '<div class="server-row">';
       echo '<div class="pill">'.lang('usercp_menu_title').'</div>';

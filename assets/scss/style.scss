@@ -22,9 +22,14 @@
 a{
   color: var(--cyan);
   transition: color ease .25s;
+  text-decoration: none;
   &:hover{
     color: var(--cyan2);
   }
+}
+
+ul{
+  list-style: none;
 }
 
 *{box-sizing:border-box}
@@ -464,4 +469,8 @@ body{
 
 .hero-slider-item{
   width: 100%;
+}
+
+.user-panel-card{
+  margin-top: 14px;
 }
