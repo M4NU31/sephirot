@@ -33,7 +33,7 @@
   </div>
 </section>
 
-<section id="features" class="section">
+<section id="features" class="section section-landing">
   <div class="section-inner">
     <div class="section-title">
       <h2>Features</h2>
@@ -48,7 +48,7 @@
   </div>
 </section>
 
-<section id="about" class="section">
+<section id="about" class="section section-landing">
   <div class="section-inner">
     <div class="section-title">
       <h2>About</h2>
@@ -72,7 +72,7 @@
   </div>
 </section>
 
-<section id="gameplay" class="section">
+<section id="gameplay" class="section section-landing">
   <div class="section-inner">
     <div class="section-title">
       <h2>Gameplay</h2>
@@ -89,39 +89,6 @@
       <p class="lead" style="max-width:none">
         Discover epic gameplay and challenging dungeons.
       </p>
-    </div>
-  </div>
-</section>
-
-<section id="download" class="section">
-  <div class="section-inner">
-    <div class="section-title">
-      <h2>Download</h2>
-      <div class="sub">Conecta estos botones a tus módulos/páginas.</div>
-    </div>
-
-    <div class="two-col">
-      <div class="card">
-        <h3>Download client</h3>
-        <p>Enlaza aquí tu mirror. Recomendado: 2 mirrors (principal + backup).</p>
-        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="<?php echo __BASE_URL__ ?>download">Download now</a>
-          <a class="btn ghost" href="<?php echo __BASE_URL__ ?>news">Patch notes</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>Create account</h3>
-        <p>Registro directo desde WebEngine.</p>
-        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="<?php echo __BASE_URL__ ?>register">Register</a>
-          <a class="btn ghost" href="<?php echo __BASE_URL__ ?>login">Account</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer">
-      © <?php echo date('Y'); ?> <?php echo config('server_name'); ?> — Season 8 Ep 3
     </div>
   </div>
 </section>

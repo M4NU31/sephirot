@@ -264,8 +264,6 @@ body{
   overflow:hidden;
   margin-bottom: 22px;
   scroll-margin-top: calc(var(--headerH) + 16px);
-  height: 100dvh;
-
   &::before{
     content:"";
     position:absolute; inset:-1px;
@@ -274,6 +272,9 @@ body{
       radial-gradient(900px 320px at 80% 25%, rgba(0,168,255,.08), transparent 60%);
     pointer-events:none;
     opacity:.95;
+  }
+  &.section-landing{
+    height: 100dvh;
   }
 }
 .section-inner{ position:relative; padding: 34px 26px; }
