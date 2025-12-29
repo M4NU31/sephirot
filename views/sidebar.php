@@ -8,7 +8,7 @@
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
     <div class="status">Status: <b><?php echo $serverStatus; ?></b></div>
-    <div class="status">Players: <b><?php echo $onlinePlayers; ?>/100</b></div>
+    <div class="status">Players: <b><?php echo $onlinePlayers; ?>/<?php echo $maxOnline; ?></b></div>
 
   </div>
 
