@@ -62,10 +62,16 @@ body {
 }
 
 /* Helpers */
-.container {
+@mixin container {
   width: min(1200px, 100%);
   margin: 0 auto;
 }
+
+.container {
+  @include container;
+}
+
+
 
 .hidden {
   display: none !important;
@@ -596,6 +602,7 @@ body {
   }
 
   .wrap {
+    @include container;
     padding: 18px
   }
 
