@@ -6,15 +6,15 @@ const sourcemaps = require('gulp-sourcemaps');
 
 const paths = {
   scss: 'assets/scss/**/*.scss',
-  cssDest: 'assets/css',
+  cssDest: 'css',
 };
 
 function styles() {
-  return gulp.src('assets/scss/styles.scss')
+  return gulp.src('assets/scss/style.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
     .pipe(cleanCSS())
-    .pipe(rename({ basename: 'styles', extname: '.css' }))
+    .pipe(rename({ basename: 'style', extname: '.css' }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.cssDest));
 }

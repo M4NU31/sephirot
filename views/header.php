@@ -7,7 +7,10 @@
   <title><?php echo config('server_name'); ?></title>
 
   <!-- Performance: no external fonts (system font stack). -->
-  <link rel="stylesheet" href="<?php echo __PATH_TEMPLATE__ ?>assets/css/styles.css" />
+  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>style.css" rel="stylesheet" media="screen">
+  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>profiles.css" rel="stylesheet" media="screen">
+  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>castle-siege.css" rel="stylesheet" media="screen">
+  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>override.css" rel="stylesheet" media="screen">
 </head>
 <body>
 
