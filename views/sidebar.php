@@ -27,7 +27,6 @@
       echo '<div class="panel-body">';
           templateBuildUsercp();
       echo '</div>';
-      echo '<a href="'.__BASE_URL__.'logout" class="btn btn-primary btn-xs pull-right">logout</a>';
     ?>
   </div>
   <?php } ?>
