@@ -20,16 +20,18 @@
     <a href="<?php echo __BASE_URL__ ?>download">Client Download</a>
   </div>
 
-  <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
-     href="<?php echo __BASE_URL__ ?>download">Play now</a>
-  <?php  if(isLoggedIn()) {
-    echo '<div class="panel panel-sidebar panel-usercp">';
-      echo '<div class="panel-heading">';
-        echo '<h3 class="panel-title">'.lang('usercp_menu_title').' <a href="'.__BASE_URL__.'logout" class="btn btn-primary btn-xs pull-right">logout</a></h3>';
-      echo '</div>';
+  <?php  if(isLoggedIn()) { ?>
+  <div class="server-card">
+    <?php
+      echo '<h3 class="panel-title">'.lang('usercp_menu_title').'</h3>';
       echo '<div class="panel-body">';
           templateBuildUsercp();
       echo '</div>';
-    echo '</div>';
-  } ?>
+      echo '<a href="'.__BASE_URL__.'logout" class="btn btn-primary btn-xs pull-right">logout</a>';
+    ?>
+  </div>
+  <?php } ?>
+
+  <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
+     href="<?php echo __BASE_URL__ ?>download">Play now</a>
 </aside>
