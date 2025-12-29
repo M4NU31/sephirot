@@ -7,7 +7,7 @@
   <title><?php echo config('server_name'); ?></title>
 
   <!-- Performance: no external fonts (system font stack). -->
-  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>style.css" rel="stylesheet" media="screen">
+  <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>style.css?v=<?php echo config('version'); ?>" rel="stylesheet" media="screen">
   <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>profiles.css" rel="stylesheet" media="screen">
   <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>castle-siege.css" rel="stylesheet" media="screen">
   <link href="<?php echo __PATH_TEMPLATE_CSS__; ?>override.css" rel="stylesheet" media="screen">
