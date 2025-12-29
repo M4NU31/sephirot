@@ -1,21 +1,60 @@
 <?php if(!defined('access')) die(); ?>
 <section id="home" class="section hero">
-  <div class="section-inner hero-inner" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true }'>
-	<div class="hero-slider-item hero-content">
-		<div class="hero-slider-item-inner">
-			this is slider item
-		</div>
-	</div>
-	<div class="hero-slider-item hero-content">
-		<div class="hero-slider-item-inner">
-			this is slider item
-		</div>
-	</div>
-	<div class="hero-slider-item hero-content">
-		<div class="hero-slider-item-inner">
-			this is slider item
-		</div>
-	</div>
+  <div class="section-inner hero-inner">
+    <div class="hero-slider" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true }'>
+      <div class="hero-slider-item hero-content">
+        <div class="hero-slider-item-inner">
+          this is slider item
+        </div>
+      </div>
+      <div class="hero-slider-item hero-content">
+        <div class="hero-slider-item-inner">
+          this is slider item
+        </div>
+      </div>
+      <div class="hero-slider-item hero-content">
+        <div class="hero-slider-item-inner">
+          this is slider item
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="news" class="section section-landing">
+  <div class="section-inner">
+    <div class="section-row">
+      <div class="section-row-inner">
+        <div class="section-column">
+          <div class="section-column-inner">
+			<div class="hero-slider" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true }'>
+				<div class="hero-slider-item hero-content">
+					<div class="hero-slider-item-inner">
+					this is slider item
+					</div>
+				</div>
+				<div class="hero-slider-item hero-content">
+					<div class="hero-slider-item-inner">
+					this is slider item
+					</div>
+				</div>
+				<div class="hero-slider-item hero-content">
+					<div class="hero-slider-item-inner">
+					this is slider item
+					</div>
+				</div>
+			</div>
+          </div>
+        </div>
+        <div class="section-column">
+          <div class="section-column-inner">
+			<div class="section-news">
+				<?php $handler->loadModule($_REQUEST['page'],$_REQUEST['subpage']); ?>
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
