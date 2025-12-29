@@ -9,11 +9,11 @@
   </div>
 
   <div class="side-menu" role="navigation" aria-label="Secciones">
-    <a data-spy-link href="#home">Home</a>
-    <a data-spy-link href="#features">Features</a>
-    <a data-spy-link href="#about">About</a>
-    <a data-spy-link href="#gameplay">Gameplay</a>
-    <a data-spy-link href="#download">Download</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#features">Features</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#about">About</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#gameplay">Gameplay</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#download">Download</a>
 
     <a href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
     <a href="<?php echo __BASE_URL__ ?>register">Registration</a>

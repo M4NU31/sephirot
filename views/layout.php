@@ -6,37 +6,26 @@
   <div class="wrap">
 
     <?php
-      // Ruta actual (sin querystring)
-      $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-      $uri = rtrim($uri, '/');
+      // WebEngine default routing uses page/subpage
+      if(!isset($_REQUEST['page'])) $_REQUEST['page'] = '';
+      if(!isset($_REQUEST['subpage'])) $_REQUEST['subpage'] = '';
 
-      // Base URL por si tu sitio está en subcarpeta (normalmente __BASE_URL__ ya lo maneja)
-      $base = rtrim(parse_url(__BASE_URL__, PHP_URL_PATH) ?? '', '/');
+      $is_home = ($_REQUEST['page'] === '' || $_REQUEST['page'] === 'home');
 
-      // Normaliza: quita la base del URI si aplica
-      if($base && strpos($uri, $base) === 0) {
-        $uri = substr($uri, strlen($base));
-        $uri = $uri ?: '/';
-      }
-
-      // Consideramos home si es "/" o vacío
-      $is_home = ($uri === '' || $uri === '/');
-
-      echo '<section class="section"><div class="section-inner">';
-
-      // 1) Si es home, tu landing
       if($is_home){
         include(__PATH_TEMPLATE_ROOT__ . 'views/landing.php');
       } else {
-        // 2) Si no es home, que WebEngine imprima el módulo real
-        if(function_exists('loadModule')){
-          loadModule();
-        } else {
-          echo '<div class="card"><h3>Module</h3><p>No encuentro la función que imprime módulos. Revisa default/index.php y dime qué función/include usa.</p></div>';
-        }
-      }
+        echo '<section class="section"><div class="section-inner">';
 
-      echo '</div></section>';
+        // Render the actual WebEngine module exactly like default template.
+        if(isset($handler) && is_object($handler) && method_exists($handler, 'loadModule')){
+          $handler->loadModule($_REQUEST['page'], $_REQUEST['subpage']);
+        } else {
+          echo '<div class="card"><h3>Module</h3><p>No se encontró <code>$handler->loadModule()</code>. Esto indica que el core no inyectó el handler en el template. Confirma que WebEngine está cargando este template como el default.</p></div>';
+        }
+
+        echo '</div></section>';
+      }
     ?>
 
   </div>
