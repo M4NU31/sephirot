@@ -1,7 +1,15 @@
 <?php if (!defined('access')) die(); ?>
 <section id="home" class="section hero">
 	<div class="section-inner hero-inner">
-		
+		<div class="heading-container">
+			<h1 class="heading">Mu <b>Sephirot</b></h1>
+			<p>Season 8 Ep 3</p>
+		</div>
+		<div class="text-box">
+			<p>Mu SephiroT es un servidor pensado para disfrutar el progreso sin prisas ni atajos. Rates balanceados, resets claros, eventos activos y una experiencia clásica con mejoras modernas. Juegas, avanzas y mejoras tu personaje como debe ser.
+				Entra, progresa y quédate.
+			</p>
+		</div>
 	</div>
 </section>
 
