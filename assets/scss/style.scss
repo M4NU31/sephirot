@@ -252,7 +252,6 @@ body{
   margin-left: var(--sidebarW);
 }
 .wrap{
-  @extend .container;
   padding: 28px;
 }
 
@@ -266,6 +265,7 @@ body{
   overflow:hidden;
   margin-bottom: 22px;
   scroll-margin-top: calc(var(--headerH) + 16px);
+  height: 100dvh;
 
   &::before{
     content:"";
