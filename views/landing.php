@@ -10,6 +10,10 @@
 				Entra, progresa y quédate.
 			</p>
 		</div>
+		<div class="button-row">
+			<a class="btn frame" href="<?php echo __BASE_URL__ ?>downloads">Download</a>
+			<a class="btn frame" href="<?php echo __BASE_URL__ ?>register">Register</a>
+		</div>
 	</div>
 </section>
 
