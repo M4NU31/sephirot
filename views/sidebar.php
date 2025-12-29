@@ -6,9 +6,6 @@
     </div>
     <div class="status">Version: <b>Season 8 Ep 3</b></div>
     <div class="status">Status: <b>Online</b></div>
-    <?php if( isServerOnline() ){
-      echo 'esta online';
-    } ?>
   </div>
 
   <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
