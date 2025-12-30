@@ -1,5 +1,5 @@
 <?php if (!defined('access')) die(); ?>
-<section id="home" class="section hero">
+<section id="home" class="section hero section-landing">
 	<div class="section-inner hero-inner">
 		<div class="heading-container">
 			<h1 class="heading">Mu <b>Sephirot</b></h1>

@@ -350,7 +350,6 @@ body {
 }
 
 .wrap {
-	@include container;
 	padding: 28px;
 }
 
@@ -645,13 +644,6 @@ body {
 	margin-top: 14px;
 }
 
-body {
-	background-image: url('../img/main_bg.png');
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-}
-
 
 header.topbar {
 	&:before {
@@ -677,5 +669,11 @@ header.topbar {
 		background: rgba(2, 215, 247, 1);
 		border-radius: 100%;
 		filter: blur(6px);
+	}
+}
+
+section {
+	&#home {
+		background-image: url('../img/sections/Sephirot-Section-Home.png');
 	}
 }
