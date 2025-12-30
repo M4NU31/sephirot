@@ -349,34 +349,19 @@ body {
 	margin-left: var(--sidebarW);
 }
 
-.wrap {
-	padding: 28px;
-}
+.wrap {}
 
 /* Sections */
 .section {
 	position: relative;
-	border-radius: 22px;
-	border: 1px solid rgba(48, 240, 255, .16);
 	background: linear-gradient(180deg, rgba(10, 16, 28, .62), rgba(8, 12, 20, .74));
 	box-shadow: var(--shadow);
 	overflow: hidden;
 	margin-bottom: 22px;
 	scroll-margin-top: calc(var(--headerH) + 16px);
 
-	&::before {
-		content: "";
-		position: absolute;
-		inset: -1px;
-		background:
-			radial-gradient(900px 320px at 35% 0%, rgba(48, 240, 255, .12), transparent 60%),
-			radial-gradient(900px 320px at 80% 25%, rgba(0, 168, 255, .08), transparent 60%);
-		pointer-events: none;
-		opacity: .95;
-	}
-
 	&.section-landing {
-		height: 100dvh;
+		height: calc(100dvh - var(--headerH));
 	}
 }
 
@@ -675,5 +660,7 @@ header.topbar {
 section {
 	&#home {
 		background-image: url('../img/sections/Sephirot-Section-Home.png');
+		background-size: cover;
+		background-position: top center;
 	}
 }
