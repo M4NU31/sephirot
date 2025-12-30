@@ -12,7 +12,6 @@
 		</div>
 		<div class="button-row">
 			<a class="" href="<?php echo __BASE_URL__ ?>downloads"><img src="<?php echo __PATH_TEMPLATE_IMG__; ?>sections/play-now-button.png" alt="Play Now"></a>
-			<a class="" href="<?php echo __BASE_URL__ ?>register">Register</a>
 		</div>
 	</div>
 </section>
