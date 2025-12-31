@@ -22,7 +22,7 @@
 			<div class="section-row-inner">
 				<div class="section-column">
 					<div class="section-column-inner">
-						<div class="hero-slider" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true }'>
+						<div class="hero-slider" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": true, "fade": true }'>
 							<div class="hero-slider-item hero-content">
 								<div class="hero-slider-item-inner">
 									this is slider item
