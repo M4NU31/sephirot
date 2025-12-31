@@ -663,6 +663,9 @@ section {
 
 	&#home {
 		text-align: center;
+		background-image: url('../img/sections/home-section-bg.png');
+		background-size: cover;
+		background-position: top center;
 	}
 }
 
@@ -673,7 +676,7 @@ section {
 		display: inline-block;
 		max-width: 400px;
 		transform-origin: center center;
-		transition: transform ease .25s, filter ease .25s;
+		transition: transform ease .3s, filter ease .3s;
 
 		img {
 			display: block;
@@ -681,7 +684,7 @@ section {
 		}
 
 		&:hover {
-			transform: scale(1.1);
+			transform: scale(1.05);
 			filter: drop-shadow(0 0 10px cyan);
 		}
 	}
