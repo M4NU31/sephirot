@@ -357,17 +357,16 @@ body {
 	background: linear-gradient(180deg, rgba(10, 16, 28, .62), rgba(8, 12, 20, .74));
 	box-shadow: var(--shadow);
 	overflow: hidden;
-	margin-bottom: 22px;
 	scroll-margin-top: calc(var(--headerH) + 16px);
 
 	&.section-landing {
-		height: calc(100dvh - var(--headerH));
+		//height: calc(100dvh - var(--headerH));
 	}
 }
 
 .section-inner {
 	position: relative;
-	padding: 34px 26px;
+	padding: 50px;
 }
 
 /* Hero */
@@ -658,9 +657,5 @@ header.topbar {
 }
 
 section {
-	&#home {
-		background-image: url('../img/sections/Sephirot-Section-Home.png');
-		background-size: cover;
-		background-position: top center;
-	}
+	&#home {}
 }

@@ -11,7 +11,7 @@
 			</p>
 		</div>
 		<div class="button-row">
-			<a class="" href="<?php echo __BASE_URL__ ?>downloads"><img src="<?php echo __PATH_TEMPLATE_IMG__; ?>sections/play-now-button.png" alt="Play Now"></a>
+			<a class="play-now-button" href="<?php echo __BASE_URL__ ?>downloads"><img src="<?php echo __PATH_TEMPLATE_IMG__; ?>sections/play-now-button.png" alt="Play Now"></a>
 		</div>
 	</div>
 </section>
