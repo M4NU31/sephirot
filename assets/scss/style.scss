@@ -691,4 +691,9 @@ section {
 .hero-slider {
 	border: 4px solid;
 	border-image: linear-gradient(92deg, #080c15, #28bded, #080c15) 1;
+	box-shadow: 0 0 10px cyan;
+
+	.hero-slider-item-inner {
+		padding: 40px;
+	}
 }
