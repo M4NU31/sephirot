@@ -677,7 +677,8 @@ section {
 		display: inline-block;
 		max-width: 400px;
 		transform-origin: center center;
-		transition: transform ease .3s, filter ease .3s;
+		transition: transform ease .3s, filter ease .3s, opacity ease .3s;
+		opacity: .7;
 
 		img {
 			display: block;
@@ -687,6 +688,7 @@ section {
 		&:hover {
 			transform: scale(1.05);
 			filter: drop-shadow(0 0 10px cyan);
+			opacity: 1;
 		}
 	}
 }

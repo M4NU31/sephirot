@@ -21,6 +21,6 @@ if(is_array($serverInfoCache)) {
 $maxOnline = config('maximum_online', true);
 $onlinePlayers = check_value($srvInfo[3]) ? $srvInfo[3] : 0;
 $onlinePlayersPercent = check_value($maxOnline) ? $onlinePlayers*100/$maxOnline : 0;
-$css_version = '1.1.25';
+$css_version = '1.1.26';
 
 include(__PATH_TEMPLATE_ROOT__ . 'views/layout.php');
