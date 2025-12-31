@@ -349,7 +349,10 @@ body {
 	margin-left: var(--sidebarW);
 }
 
-.wrap {}
+.wrap {
+	@include container;
+	padding: 0 20px;
+}
 
 /* Sections */
 .section {
@@ -359,9 +362,7 @@ body {
 	overflow: hidden;
 	scroll-margin-top: calc(var(--headerH) + 16px);
 
-	&.section-landing {
-		//height: calc(100dvh - var(--headerH));
-	}
+	&.section-landing {}
 }
 
 .section-inner {
