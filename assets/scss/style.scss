@@ -59,6 +59,7 @@ body {
 		radial-gradient(900px 600px at 20% 40%, rgba(0, 168, 255, .08), transparent 50%),
 		linear-gradient(180deg, var(--bg), #070b14);
 	overflow-x: hidden;
+	background-attachment: fixed;
 }
 
 /* Helpers */
@@ -658,5 +659,28 @@ header.topbar {
 }
 
 section {
+	margin: 20px 0;
+
 	&#home {}
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+
+.button-row {
+	text-align: center;
+
+	.play-now-button {
+		display: block;
+		max-width: 400px;
+		transform-origin: center center;
+		transition: transform ease .25s;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 }
