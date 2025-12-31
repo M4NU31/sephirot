@@ -2,6 +2,16 @@
 $serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline';
 ?>
 <aside class="sidebar" aria-label="Barra lateral">
+  
+  <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
+    href="<?php echo __BASE_URL__ ?>download">Play now</a>
+
+  <div class="side-menu" role="navigation" aria-label="Secciones">
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
+    <a data-spy-link href="<?php echo __BASE_URL__ ?>donation">Donation</a>
+  </div>
+
   <div class="server-card">
     <div class="server-row">
       <div class="pill">Server Info</div>
@@ -14,15 +24,6 @@ $serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline
     <div class="status">Players: <b><?php echo $onlinePlayers; ?>/<?php echo $maxOnline; ?></b></div>
     <a href="<?php echo __BASE_URL__ ?>info"><b>More Info</b></a>
 
-  </div>
-
-  <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
-    href="<?php echo __BASE_URL__ ?>download">Play now</a>
-
-  <div class="side-menu" role="navigation" aria-label="Secciones">
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>#home">Home</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>rankings">Rankings</a>
-    <a data-spy-link href="<?php echo __BASE_URL__ ?>donation">Donation</a>
   </div>
 
   <?php if (isLoggedIn()) { ?>
