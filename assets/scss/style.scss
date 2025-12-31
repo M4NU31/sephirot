@@ -704,7 +704,7 @@ section {
 	}
 
 	.flickity-page-dots {
-		bottom: 10px;
+		bottom: 30px;
 
 		.dot {
 			opacity: .7;
@@ -743,6 +743,7 @@ section {
 		.section-news {
 			.panel-news {
 				position: relative;
+				padding: 20px;
 
 				.panel-body {
 					display: none;
