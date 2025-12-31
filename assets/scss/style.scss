@@ -267,6 +267,18 @@ body {
 	&::-webkit-scrollbar-track {
 		background: transparent
 	}
+
+	&:before {
+		content: "";
+		width: 5px;
+		height: 100%;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translateX(-50%) translateY(-50%);
+		background: #000;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0, #02d7f7 50%, rgba(0, 0, 0, 0) 100%);
+	}
 }
 
 .server-card {
