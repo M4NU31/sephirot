@@ -673,7 +673,7 @@ section {
 		display: inline-block;
 		max-width: 400px;
 		transform-origin: center center;
-		transition: transform ease .25s;
+		transition: transform ease .25s, filter ease .25s;
 
 		img {
 			display: block;
@@ -682,6 +682,7 @@ section {
 
 		&:hover {
 			transform: scale(1.1);
+			filter: drop-shadow(0 0 10px cyan);
 		}
 	}
 }
