@@ -698,12 +698,27 @@ section {
 		content: "";
 		position: absolute;
 		inset: -1px;
-		background: radial-gradient(100% 20% at 20% 0, rgba(48, 240, 255, .14), transparent 60%);
+		background: radial-gradient(100% 150px at 50% 0, rgba(48, 240, 255, .14), transparent 60%);
 		opacity: .7;
 		pointer-events: none;
 	}
 
 	.hero-slider-item-inner {
 		padding: 40px;
+	}
+
+	.flickity-page-dots {
+		bottom: 10px;
+
+		.dot {
+			opacity: .7;
+			background-color: white;
+			border-radius: 0;
+			margin: 0 4px;
+
+			&.is-selected {
+				opacity: 9;
+			}
+		}
 	}
 }
