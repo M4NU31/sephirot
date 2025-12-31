@@ -661,14 +661,16 @@ header.topbar {
 section {
 	margin: 20px 0;
 
-	&#home {}
+	&#home {
+		text-align: center;
+	}
 }
 
 .button-row {
 	text-align: center;
 
 	.play-now-button {
-		display: block;
+		display: inline-block;
 		max-width: 400px;
 		transform-origin: center center;
 		transition: transform ease .25s;
