@@ -64,7 +64,7 @@ body {
 
 /* Helpers */
 @mixin container {
-	width: min(1200px, 100%);
+	width: min(1500px, 100%);
 	margin: 0 auto;
 }
 
@@ -660,7 +660,7 @@ section {
 		text-align: center;
 		background-image: url('../img/sections/home-section-bg.png');
 		background-size: cover;
-		background-position: top center;
+		background-position: center;
 		text-shadow: 0 0 20px black;
 	}
 }
@@ -704,7 +704,7 @@ section {
 	}
 
 	.flickity-page-dots {
-		bottom: 30px;
+		bottom: -30px;
 
 		.dot {
 			opacity: .7;
