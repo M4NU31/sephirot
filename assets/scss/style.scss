@@ -664,12 +664,6 @@ section {
 	&#home {}
 }
 
-img {
-	display: block;
-	width: 100%;
-}
-
-
 .button-row {
 	text-align: center;
 
@@ -678,6 +672,11 @@ img {
 		max-width: 400px;
 		transform-origin: center center;
 		transition: transform ease .25s;
+
+		img {
+			display: block;
+			width: 100%;
+		}
 
 		&:hover {
 			transform: scale(1.1);

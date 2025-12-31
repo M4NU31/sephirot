@@ -2,8 +2,8 @@
 $serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline';
 ?>
 <aside class="sidebar" aria-label="Barra lateral">
-  
-  <a class="btn primary" style="width:100%;justify-content:center;margin-top:14px"
+
+  <a class="btn primary" style="width:100%;justify-content:center;"
     href="<?php echo __BASE_URL__ ?>download">Play now</a>
 
   <div class="side-menu" role="navigation" aria-label="Secciones">
@@ -12,7 +12,7 @@ $serverStatus = (CheckGS('190.102.43.191', 55900) == true) ? 'Online' : 'Offline
     <a data-spy-link href="<?php echo __BASE_URL__ ?>donation">Donation</a>
   </div>
 
-  <div class="server-card">
+  <div class="server-card" style="margin-bottom: 14px;">
     <div class="server-row">
       <div class="pill">Server Info</div>
     </div>
