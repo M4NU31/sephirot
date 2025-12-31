@@ -722,3 +722,20 @@ section {
 		}
 	}
 }
+
+.section-row {
+	.section-row-inner {
+		display: flex;
+		gap: 4%;
+		flex-wrap: wrap;
+		align-items: center;
+
+		.section-column {
+			width: 100%;
+
+			@media only screen and (min-width: 989px) {
+				width: 48%;
+			}
+		}
+	}
+}
