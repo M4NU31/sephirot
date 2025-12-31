@@ -25,7 +25,7 @@
 						<div class="hero-slider" data-flickity='{ "wrapAround": true, "groupCells": true, "cellAlign": "left","prevNextButtons": false, "pageDots": true, "fade": true }'>
 							<div class="hero-slider-item hero-content">
 								<div class="hero-slider-item-inner">
-									this is slider item
+									<img src="<?php echo __PATH_TEMPLATE_IMG__; ?>slider/slider_1.png" alt="Get an amazing loot on blood castle">
 								</div>
 							</div>
 							<div class="hero-slider-item hero-content">
