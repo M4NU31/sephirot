@@ -703,10 +703,6 @@ section {
 		pointer-events: none;
 	}
 
-	.hero-slider-item-inner {
-		padding: 40px;
-	}
-
 	.flickity-page-dots {
 		bottom: 10px;
 
@@ -732,6 +728,12 @@ section {
 
 		.section-column {
 			width: 100%;
+
+			.hero-slider-item-inner {
+				img {
+					width: 100%;
+				}
+			}
 
 			@media only screen and (min-width: 989px) {
 				width: 48%;
