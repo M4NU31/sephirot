@@ -692,6 +692,16 @@ section {
 	border: 4px solid;
 	border-image: linear-gradient(92deg, #080c15, #28bded, #080c15) 1;
 	box-shadow: 0 0 10px cyan;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		inset: -1px;
+		background: radial-gradient(260px 150px at 20% 0, rgba(48, 240, 255, .14), transparent 60%);
+		opacity: .7;
+		pointer-events: none;
+	}
 
 	.hero-slider-item-inner {
 		padding: 40px;
